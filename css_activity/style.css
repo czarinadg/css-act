@@ -1,10 +1,24 @@
+@font-face {
+    font-family: 'Gasalt-Black';
+    src: url(fonts/Gasalt-Black.ttf);
+}
+@font-face {
+    font-family: 'Gasalt-Regular';
+    src: url(fonts/Gasalt-Regular.ttf);
+}
+@font-face {
+    font-family: 'Gasalt-Thin';
+    src: url(fonts/Gasalt-Thin.ttf);
+}
+
 body{
     background-color: lightgray;
 }
 .container{
-    margin: 200px;
+    margin: 100px auto;
     padding: 50px;
     background: white;
+    width: 1000px;
 }
 .profile-picture{
     border-radius: 50%;
@@ -13,15 +27,19 @@ body{
     margin-right: auto;
     width: 200px;
 }
-.social-icon{ 
-    float: left;
-    display: block;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20px;
+.linkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.social-icon{ 
+    width: 20px;
+    margin-right: 10px;
+}
+
 a{
+    display: flex;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +48,6 @@ a{
     color: blue;
     padding: 14px 25px;
     text-decoration: none;
-    display: inline-block;
     border-radius: 40px;
     text-align: center;
 }
@@ -46,4 +63,5 @@ a{
 }
 .name{
     text-align: center;
+    font-family: 'Gasalt-Black';
 }
